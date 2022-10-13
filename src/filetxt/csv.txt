@@ -1,0 +1,3 @@
+A3,Son,22,Nam,HN,7.0
+A2,Cu,26,Nam,HN,6.0
+A2,Viet,25,nam,HN,5.6

@@ -1,8 +1,10 @@
 package main;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class SinhVien {
+public class SinhVien implements Serializable {
+    
     private String id;
     private String fullname;
     private int age;
@@ -13,7 +15,14 @@ public class SinhVien {
     public SinhVien() {
     }
 
-    public SinhVien(int id, String fullname, int age, String gender, String address, double avg) {
+
+    public SinhVien(String id, String fullname, int age, String gender, String address, double avg) {
+        this.id = id;
+        this.fullname = fullname;
+        this.age = age;
+        this.gender = gender;
+        this.address = address;
+        this.avg = avg;
     }
 
     public String getId() {

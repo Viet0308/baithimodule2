@@ -2,6 +2,7 @@ package main;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class IOReadAndWrite {
     static File file = new File("E:\\module2\\casestudy\\baithimodule2\\src\\filetxt\\csv.txt");
@@ -31,7 +32,7 @@ public class IOReadAndWrite {
             String str = bufferedReader.readLine();
             while (str != null) {
                 String[] arr = str.split(",");
-                int id = Integer.parseInt(arr[0]);
+                String id = arr[0];
                 String fullname = arr[1];
                 int age = Integer.parseInt(arr[2]);
                 String gender = arr[3];

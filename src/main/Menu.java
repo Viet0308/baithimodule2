@@ -68,8 +68,6 @@ public class Menu {
         sapxepDStangdan();
         Collections.reverse(ListSinhVien);
     }
-    public static Comparator<SinhVien> diemtrungbinhtangdan = (o1, o2) -> (int) (o2.getAvg() - o1.getAvg());
-    public static Comparator<SinhVien> diemtrungbinhgiamdan = (o1, o2) -> (int) (o1.getAvg() - o2.getAvg());
 
     public void readFromFile() {
         ListSinhVien = IOReadAndWrite.read();
